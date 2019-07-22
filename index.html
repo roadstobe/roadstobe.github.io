@@ -3,33 +3,135 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/linksForTestReactoin.css">
     <title>roadstobe</title>
   </head>
   <body>
     <h1 class="title">Begin</h1>
-    <body>
-        <div class="mainCalculator">
-            <div class="operation-block">
-                <input type="button" id="buttonPlus" value="+">
-                <input type="button" id="buttonMinus" value="-">
-                <input type="button" id="buttonMultyplay" value="*">
-                <input type="button" id="buttonDevide" value="/">
-            </div>
-            <div class="separator"><hr></div>
-            <div class="input-blocks">
-                <div class="input-block">
-                    <label>number 1 </label>
-                    <input type="number" id="number1">
-                </div>
-                <div class="input-block">
-                    <label>number 2 </label>
-                    <input type="number" id="number2">
-                </div>
-            </div>
+      <div style="background: black; height: 30px; padding-left: 20px; padding-top: 15px;">
+         <div class="menu">
+            <a href="calculator.html" class="links">Calculator</a>
         </div>
-        <script src="js\index.js"></script>
+        <div >
+            <a href="TestReaction.html" class="links">Game "Test reaction"</a>
+        </div>
+      </div>
+      <div style="margin-top: 10px;">
+          <p class="myBiograhy">About me</p>
+          <div style="float: left; padding: 20px">
+          <img src="img/photo5307590949855144769.jpg" width="150" >
+        </div>
+          <div style="float: left;">
+            <h2>Melnychuk Vasyl</h2>
+              <div>
+                  <h3 id="personalData" class="likeLinks">Personal Data</h3>
+                  <div id="setData"></div>
+                 
+                  <h3 id="experience"  class="likeLinks">Experience</h3>
+                  <div id="setExperience"></div>
+                  
+                  <h3 id="education"  class="likeLinks">Education</h3>
+                  <div id="setEducation"></div>
+                       
+                  <h3 id="skills"  class="likeLinks">Skills</h3>
+                  <div id="setSkills"></div>
+                  
+                  <h3 id="lang"  class="likeLinks">Language knowledge</h3>
+                  <div id="setLang"></div>
+              </div>
+              <p style="text-align: center; font-family: cursive; color: brown">I like programing. I would like improve my knowledge it.</p>
+        </div>
+      </div>
+      
+       <script>
+           var personalData = false;
+           var expData = false;
+           var educationData = false;
+           var skillsData = false;
+           var langData = false;
+        function getRandomColor(){
+            var colors = '0123456789ABCDEF'.split('');
+            var color = "#";
+                for (var i = 0; i < 6; i++)
+                    {
+                        color+=colors[Math.floor(Math.random() * 16)];
+                    }
+                return color;
+        }
+        document.getElementById("personalData").onclick = function(){
+            if(personalData == false)
+                {
+                     document.getElementById("setData").innerHTML = "<p><b>Date birtday: </b><span>25:02:1997</span></p><p><b>Locate: </b><span>Lviv</span></p><p><b>Phone: </b><span>380976681039</span></p><p><b>e-mail: </b><span>epro100live@gmail.com</span></p><p><b>Locate: </b><span>Lviv</span></p>";
+                    document.getElementById("setData").style.background = getRandomColor();
+                    personalData = true;
+                }
+            else
+            {
+                personalData = false;
+                document.getElementById("setData").innerHTML = "";
+            }
+        }
+        document.getElementById("experience").onclick = function(){
+            if(expData == false)
+                {
+                    document.getElementById("setExperience").innerHTML = "<p>Work experience is absent. My personal projects on gitHub: <a href='https://github.com/roadstobe?tab=repositories'>my project</a></p>";
+                    document.getElementById("setExperience").style.background = getRandomColor();
+                    expData = true;
+                }
+            else
+                {
+                     document.getElementById("setExperience").innerHTML= "";
+                    expData = false;
+                }
+        } 
+        document.getElementById("education").onclick = function(){
+            if(educationData == false){
+                document.getElementById("setEducation").innerHTML = " <p>study in  IT Step(2018-2020)</p>";
+                educationData = true;
+                document.getElementById("setEducation").style.background = getRandomColor();
+            }
+            else
+                {
+                    document.getElementById("setEducation").innerHTML = "";
+                    educationData = false;
+                }
+        }
+        document.getElementById("skills").onclick = function(){
+            if(skillsData == false)
+                {
+                    document.getElementById("setSkills").innerHTML = " <p>C++, C#, good knowledge</p><p> HTML, CSS, JS, SQL, Python basic knowledge</p>";
+                    skillsData = true;
+                    document.getElementById("setSkills").style.background = getRandomColor();
+                }
+            else
+                {
+                    skillsData = false;
+                    document.getElementById("setSkills").innerHTML = "";
+                }
+        }
+        document.getElementById("lang").onclick = function(){
+           
+            if(langData == false)
+                {
+                    var arrLang = ["Ukraine (native)", "Russian (free)", "English(intermediate)"];
+                    var value = "<ol>";
+                    for (var i = 0; i < arrLang.length; i++)
+                    {
+                        value += "<li>" + arrLang[i] +"</li>";
+                    }
+                    value += "</ol";
+                    document.getElementById("setLang").innerHTML = value;
+                    document.getElementById("setLang").style.background = getRandomColor();
+                    langData = true;
+                }
+            else
+                {
+                    document.getElementById("setLang").innerHTML = "";
+                    langData = false;
+                }
+        }
+        
+      </script>
     </body>
 
-
-  </body>
 </html>

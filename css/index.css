@@ -2,26 +2,10 @@
   text-align: center;
 }
 body{
-  background: rgba(240, 71, 12);
+  background: #fc8c03;
 }
-.mainCalculator{
-    width: 500px;
-    margin:  0 auto;
+.myBiograhy{
+    color: #070bf2;
+    font-size: 22px;
     text-align: center;
-    background-color: rgb(231, 235, 18);
-    padding:  20px;
-    border:  2 px solid black;
-}
-.mainCalculator .operation-block input{
-    height: 40px;
-    width: 40px;
-    margin: 20px;
-}
-
-.input-block label{
-    display: block;
-}
-.mainCalculator .input-blocks .input-block{
-    display: inline-block;
-    padding: 10px;
 }
