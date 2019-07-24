@@ -8,7 +8,9 @@
     font-size: 18px;
     text-decoration: none;
    border: 2px green solid;
-    margin-right: 25px
+    margin-right: 25px;
+    float: left;
+    
 }
 .links:hover{
     border: 3px #ff00ae solid;
@@ -17,6 +19,7 @@
     border-left: 0px;
     border-radius: 50%;
     font-family: cursive;
+    
 }
 .likeLinks{
     color: #EFF0F1;
