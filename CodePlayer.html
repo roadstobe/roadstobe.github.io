@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Code Player</title>
+                <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+        
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="js/codePlayer.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/codePlayer.css">
+        <link href="jquery-ui-1.12.1/jquery-ui.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="name">CodePlayer</div>
+                <div class="buttonColection">
+                    <div class="button first active">html</div>
+                    <div class="button active">CSS</div>
+                    <div class="button active">JavaScript</div>
+                    <div class="button last active">Output</div>
+                </div>
+        </div>
+        <div>
+            <div id="html" class="mainWindow">
+                <textarea class="inputArea" id="htmlInput"><p>heh</p></textarea>
+            </div>
+            <div id="css" class="mainWindow">
+                 <textarea class="inputArea" id="cssInput"></textarea>
+            </div>
+            <div id="js" class="mainWindow">
+                <textarea  class="inputArea"></textarea>
+            </div>
+            <iframe id="output" class="mainWindow"></iframe>
+        </div>
+        
+        
+        <script>
+                      
+             $(".button").hover(function(){
+                  $(this).addClass("highlight");             
+            }, function(){
+               $(this).removeClass("highlight"); 
+            });
+            $(".button").click(function(){
+                $(this).toggleClass("active");
+                $(this).removeClass("highlight");
+            });
+            
+            $(".button").click(function(){
+                
+                if($(this).html() == "html")
+                    {
+                        if($("#html").css("display") != "none")
+                            {
+                                //$("#html").css("display", "none");
+                                $("#html").fadeOut("slow");
+                               
+                            }
+                        else
+                        {
+                           
+                            $("#html").fadeIn("slow");
+                        }
+                        
+                    }
+                if($(this).html() == "CSS")
+                    {
+                        if($("#css").css("display") != "none")
+                            {
+                                $("#css").fadeOut("slow");
+                            }
+                        else
+                            {
+                                $("#css").fadeIn("slow");
+                            }
+                    }
+                if($(this).html() == "JavaScript")
+                    {
+                        if($("#js").css("display") != "none")
+                            {
+                                $("#js").fadeOut("slow");
+                            }
+                        else
+                        {
+                            $("#js").fadeIn("slow");
+                        }
+                    }
+                 if($(this).html() == "Output")
+                    {
+                        if($("#output").css("display") != "none")
+                            {
+                                $("#output").fadeOut("slow");
+                            }
+                        else
+                            {
+                                 $("#output").fadeIn("slow");
+                            }
+                           
+                    }
+                
+           $(".mainWindow").width(($(window).width() / $(".active").length) );
+            });
+            
+            $(".inputArea").on('change keyup paste',function(){
+                var html = $.trim($("#htmlInput").val());
+                var css = $.trim($("#cssInput").val());
+                $("#output").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssInput").val() + "</style></head><body>" + $("#htmlInput").val() + "</body></html>");
+                
+                document.getElementById("output").contentWindow.eval($("#js").val());
+            });
+             
+             $(".inputArea").height($(window).height() - $(".header").height() - 15); 
+           
+           
+        </script>
+    </body>
+</html>
