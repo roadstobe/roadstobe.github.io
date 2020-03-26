@@ -1,0 +1,45 @@
+<h2>Shared task</h2>
+
+{{#if tasks}}
+    <div id="tasksContainer">
+        <div class="row">
+            {{#each tasks}}
+                <div class="col s12 l6 m6">
+                    <div class="card  {{#if important}} deep-orange {{else}}blue-grey darken-1 {{/if}}" data-idCard="{{id}}">
+                        <div class="card-content white-text">
+                            <span class="card-title {{#if complete}} completeTask{{/if}} ">{{title}}</span>
+                            <p class="time {{#if complete}} completeTask{{/if}} ">{{date}}</p>
+                            <p class="{{#if complete}} completeTask{{/if}} fontSizeMore">{{content}}</p>
+                        </div>
+                        <div class="card-action actionCardStyle">
+                            <form action="/tasks/delete" method="post">
+                                <input type="hidden" name="idTask" value="{{id}}">
+                                <button class="btn red small" type="submit">Delete</button>
+                            </form>
+                            <button class="btn deep-orange isImportant"
+                                    data-id="{{_id}}" value="important" data-state="{{#if important}} yes {{else}} no {{/if}}">important
+                            </button>
+                            <form action="/tasks/complete" method="post">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <input type="hidden" name="state" value="{{complete}}">
+                                <button type="submit" class="btn small ">Complete</button>
+                            </form>
+                            <form action="/tasks/change" method="post">
+                                <button class="btn blue-grey" type="submit" value="{{_id}}" name="id">change</button>
+                            </form>
+                            <form action="/tasks/share" method="post">
+                                <button class="btn light-green small" value="{{_id}}" name="id">share</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{else}}
+    <p>You are have not shared tasks yet</p>
+{{/if}}
+
+
+

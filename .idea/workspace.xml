@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="934365d1-f8a5-4b40-a7f3-5ecb2bdf3a29" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZTj4PlklHvxDHA2IUEn0m6RvTT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../angular/lesson2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\study\step\laba\views\task" />
+      <recent name="W:\study\step\laba\views\auth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\study\step\laba\public" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="934365d1-f8a5-4b40-a7f3-5ecb2bdf3a29" name="Default Changelist" comment="" />
+      <created>1584869785539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584869785539</updated>
+      <workItem from="1584869787616" duration="4315000" />
+      <workItem from="1584878044873" duration="17804000" />
+      <workItem from="1584900607429" duration="8117000" />
+      <workItem from="1584964265657" duration="7974000" />
+      <workItem from="1585211663402" duration="301000" />
+      <workItem from="1585212005654" duration="565000" />
+      <workItem from="1585212702725" duration="10761000" />
+      <workItem from="1585227315445" duration="17000" />
+      <workItem from="1585238414139" duration="51000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="45" key="#Inspections" timestamp="1584884803045">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="45" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1584884803045" />
+    <state x="275" y="45" width="816" height="723" key="#Intentions" timestamp="1584894592920">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="45" width="816" height="723" key="#Intentions/0.0.1366.768@0.0.1366.768" timestamp="1584894592920" />
+    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1585238463602">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585238463602" />
+    <state width="1344" height="192" key="GridCell.Tab.0.bottom" timestamp="1585211699320">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1344" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585211699320" />
+    <state width="1344" height="192" key="GridCell.Tab.0.center" timestamp="1585211699319">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1344" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585211699319" />
+    <state width="1344" height="192" key="GridCell.Tab.0.left" timestamp="1585211699319">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1344" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585211699319" />
+    <state width="1344" height="192" key="GridCell.Tab.0.right" timestamp="1585211699319">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1344" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585211699319" />
+    <state x="263" y="122" key="IDE.errors.dialog" timestamp="1585211945480">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="263" y="122" key="IDE.errors.dialog/0.0.1366.768@0.0.1366.768" timestamp="1585211945480" />
+    <state x="252" y="36" key="SettingsEditor" timestamp="1584886456028">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="252" y="36" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584886456028" />
+    <state x="375" y="238" width="665" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1584871620675">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="375" y="238" width="665" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.768@0.0.1366.768" timestamp="1584871620675" />
+  </component>
+</project>

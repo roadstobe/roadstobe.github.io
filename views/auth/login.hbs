@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col s12 ">
+        <ul class="tabs">
+            <li class="tab col s3"><a href="#login">Sign in</a></li>
+            <li class="tab col s3"><a class="active" href="#register">Sign up</a></li>
+        </ul>
+    </div>
+
+    <div id="login" class="col s12">
+        <h1>Login</h1>
+        <form action="/auth/login" method="post">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="login" name="login" id="login" type="text" class="validate">
+                    <label for="login">Login</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="password" name="password" id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">sign in</button>
+        </form>
+    </div>
+    <div id="register" class="col s12 ">
+        <h1>Register</h1>
+        <form action="/auth/register" method="post">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="login" name="login" id="rlogin" type="text" class="validate">
+                    <label for="rlogin">Login</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="name" name="name" id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="email" name="email" id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="password" name="password" id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="confirm" name="confirm" id="confirm" type="password" class="validate">
+                    <label for="confirm">Confirm password</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">sign up</button>
+        </form>
+    </div>
+</div>

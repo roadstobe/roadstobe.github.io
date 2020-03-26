@@ -1,0 +1,17 @@
+<div class="card  {{#if important}} deep-orange {{else}}blue-grey darken-1 {{/if}}" >
+    <div class="card-content white-text">
+        <span class="card-title {{#if complete}} completeTask{{/if}} ">{{task.title}}</span>
+        <p class="time {{#if complete}} completeTask{{/if}} ">{{task.date}}</p>
+        <p class="{{#if complete}} completeTask{{/if}} fontSizeMore">{{task.content}}</p>
+    </div>
+</div>
+<form action="/tasks/shareResult" method="post" class="col s12 offset-s3" style="padding: 20px">
+    <input type="hidden" name="id" value="{{task.id}}">
+    <div class="input-field">
+        <input placeholder="Username" id="username" type="text" class="validate" required name="username">
+        <label for="title">Username</label>
+        <span class="helper-text" data-error="enter username" data-success="right"></span>
+    </div>
+
+    <button class="btn right">Share</button>
+</form>

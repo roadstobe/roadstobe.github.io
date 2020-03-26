@@ -1,0 +1,17 @@
+.card-action.actionCardStyle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.actionCardStyle form button{
+    margin: 3px
+}
+.fontSizeMore{
+    font-size: 20px;
+}
+.completeTask{
+    text-decoration: line-through;
+}
