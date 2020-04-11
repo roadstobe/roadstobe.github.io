@@ -19,7 +19,6 @@
   <component name="ProjectId" id="1ZTj4PlklHvxDHA2IUEn0m6RvTT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -27,7 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../angular/lesson2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,11 +65,13 @@
       <workItem from="1585212702725" duration="10761000" />
       <workItem from="1585227315445" duration="17000" />
       <workItem from="1585238414139" duration="51000" />
+      <workItem from="1586431193245" duration="1594000" />
+      <workItem from="1586444046680" duration="778000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="45" key="#Inspections" timestamp="1584884803045">
@@ -81,10 +82,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="45" width="816" height="723" key="#Intentions/0.0.1366.768@0.0.1366.768" timestamp="1584894592920" />
-    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1585238463602">
+    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1586432787390">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585238463602" />
+    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1586432787390" />
     <state width="1344" height="192" key="GridCell.Tab.0.bottom" timestamp="1585211699320">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

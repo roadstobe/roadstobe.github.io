@@ -119,16 +119,10 @@ exports.saveShare = async function (req, res) {
     let user = await User.findOne({login:req.body.username});
     let task = await Task.findOne({_id:req.body.id});
 
-    let sharedTasks = await Share.findOne({idTask:task._id});
-    if(sharedTasks.idTask){
-        let tmp = sharedTasks.idUsers;
-        if(!tmp.indexOf(user._id))
-            tmp.push(user._id);
-        await Share.updateOne({idTask: task._id}, {$set:{
-                idUsers: tmp
-            }})
 
-    }else{
+    let sharedTasks = await Share.findOne({idTask:task._id});
+    if(!sharedTasks){
+        console.log('else')
         let result = new Share({
             idTask: task,
             idUsers: [user]
@@ -137,6 +131,16 @@ exports.saveShare = async function (req, res) {
         await result.save(err=>{
             console.log(err);
         });
+    }else if(sharedTasks.idTask){
+        let tmp = sharedTasks.idUsers;
+        if(!tmp.indexOf(user._id))
+            tmp.push(user._id);
+        await Share.updateOne({idTask: task._id}, {$set:{
+                idUsers: tmp
+            }})
+
+    }else{
+
 
     }
     res.render('task/shareResult', {

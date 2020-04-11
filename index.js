@@ -67,7 +67,7 @@ start();
 async function start(){
     try{
 
-        await mongoose.connect(`mongodb+srv://roadstobe:zZi3xajxdRefvV5U@cluster0-an4hd.mongodb.net/shop`, {
+        await mongoose.connect(`mmongodb://localhost:27017/usersdb`, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         }, function(err){
